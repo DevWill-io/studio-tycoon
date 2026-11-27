@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dnfw33bwfjgu5"]
+
+[ext_resource type="Script" uid="uid://b0h7qc8bph3vf" path="res://scripts/modals/OfflinePopup.gd" id="1_5t1et"]
+
+[node name="OfflinePopup" type="PanelContainer" unique_id=22569067]
+custom_minimum_size = Vector2(0, 280)
+script = ExtResource("1_5t1et")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=2025188127]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=1927285959]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TitleLabel" type="Label" parent="Margin/VBox" unique_id=118864832]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49019608, 0.9764706, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "📴 Você ficou ausente"
+horizontal_alignment = 1
+
+[node name="TimeLabel" type="Label" parent="Margin/VBox" unique_id=374295070]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9309246, 0.9309246, 0.9776916, 1)
+theme_override_font_sizes/font_size = 16
+text = "9min 56s"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Margin/VBox" unique_id=1917979057]
+layout_mode = 2
+
+[node name="GainTitle" type="Label" parent="Margin/VBox" unique_id=2088483267]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85430586, 0.85430586, 0.9063318, 1)
+theme_override_font_sizes/font_size = 14
+text = "🌙 Ganhos offline"
+horizontal_alignment = 1
+
+[node name="GainLabel" type="Label" parent="Margin/VBox" unique_id=595698887]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "+864.8K notas"
+horizontal_alignment = 1
+
+[node name="InfoLabel" type="Label" parent="Margin/VBox" unique_id=2045691469]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7977378, 0.7977378, 0.85430586, 1)
+theme_override_font_sizes/font_size = 10
+text = "(50% do NPS por até 8h)"
+horizontal_alignment = 1
+
+[node name="OKButton" type="Button" parent="Margin/VBox" unique_id=885763980]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Coletar!"

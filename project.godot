@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Studio Tycoon"
+config/version="1.0.6"
+run/main_scene="uid://xqlbybwxud27"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+run/max_fps=60
+boot_splash/show_image=false
+config/icon="uid://bufhe5rgf5blr"
+
+[audio]
+
+buses/default_bus_layout="uid://ck0wxthiap6t0"
+
+[autoload]
+
+Global="*uid://bmd7elikuag4b"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=2
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

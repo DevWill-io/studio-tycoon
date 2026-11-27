@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c2r6u7irikkbw"]
+
+[ext_resource type="Script" uid="uid://lt8jjbud7246" path="res://scripts/effects/GoldenNote.gd" id="1_x6mlg"]
+
+[node name="GoldenNote" type="Button" unique_id=804273738]
+custom_minimum_size = Vector2(84, 84)
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_colors/font_outline_color = Color(0.3529412, 0.22745098, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 44
+text = "🎵"
+script = ExtResource("1_x6mlg")
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1689888047]
+max_polyphony = 2
+bus = &"SFX"

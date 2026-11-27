@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://dlcc84ce0n1xr"]
+
+[ext_resource type="Script" uid="uid://cmbb6x6nbnuhb" path="res://scripts/ui/UpgradeCard.gd" id="1_yeejx"]
+
+[node name="UpgradeCard" type="PanelContainer" unique_id=1000143953]
+custom_minimum_size = Vector2(0, 110)
+offset_right = 73.0
+offset_bottom = 110.0
+size_flags_horizontal = 3
+mouse_filter = 1
+script = ExtResource("1_yeejx")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1967028027]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 8
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=1994944641]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TopRow" type="HBoxContainer" parent="Margin/VBox" unique_id=2080882626]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="IconLabel" type="Label" parent="Margin/VBox/TopRow" unique_id=167234852]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+text = "🎵"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InfoBox" type="VBoxContainer" parent="Margin/VBox/TopRow" unique_id=1102824345]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="NameLabel" type="Label" parent="Margin/VBox/TopRow/InfoBox" unique_id=1181031479]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Item"
+clip_text = true
+
+[node name="LevelLabel" type="Label" parent="Margin/VBox/TopRow/InfoBox" unique_id=680374219]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6039216, 0.8156863, 1, 1)
+text = "Nível 0"
+
+[node name="BonusLabel" type="Label" parent="Margin/VBox/TopRow" unique_id=380757696]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49019608, 0.9764706, 1, 1)
+text = "+0"
+horizontal_alignment = 2
+
+[node name="ButtonsRow" type="HBoxContainer" parent="Margin/VBox" unique_id=1216659899]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Buy1" type="Button" parent="Margin/VBox/ButtonsRow" unique_id=1385030874]
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 12
+text = "1x"
+
+[node name="Buy10" type="Button" parent="Margin/VBox/ButtonsRow" unique_id=147187780]
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 12
+text = "10x"
+
+[node name="BuyMax" type="Button" parent="Margin/VBox/ButtonsRow" unique_id=971817012]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+theme_override_font_sizes/font_size = 12
+text = "MAX"

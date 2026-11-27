@@ -1,0 +1,93 @@
+# ==========================================
+# Godot 4+ (Cache, shaders e metadados locais)
+# ==========================================
+.godot/
+
+# ==========================================
+# Godot 3 e arquivos de configuração legados
+# ==========================================
+.import/
+export.cfg
+export_presets.cfg
+
+# ==========================================
+# Traduções e recursos gerados automaticamente
+# ==========================================
+*.translation
+
+# ==========================================
+# Suporte a C# / Mono / .NET (caso adicione futuramente)
+# ==========================================
+.mono/
+data_*/
+mono_crash.*.json
+*.csproj.user
+*.suo
+*.user
+obj/
+bin/
+
+# ==========================================
+# Compilações, Builds e Exportações locais
+# ==========================================
+*.apk
+*.aab
+*.exe
+*.pck
+*.dmg
+*.ipa
+*.zip
+*.tar.gz
+builds/
+build/
+export/
+exports/
+releases/
+
+# ==========================================
+# Chaves de Assinatura e Segredos (NUNCA subir no Git!)
+# ==========================================
+*.keystore
+*.jks
+*.p12
+*.pem
+*.env
+android/build/
+
+# ==========================================
+# Arquivos de Save locais (caso teste na pasta do projeto)
+# ==========================================
+save_*.json
+*.save
+
+# ==========================================
+# IDEs, Editores externos e Ferramentas Mobile
+# ==========================================
+.vscode/
+.idea/
+*.code-workspace
+.acode/
+.termux/
+
+# ==========================================
+# Sistema Operacional e Arquivos Temporários
+# ==========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux / Android
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log

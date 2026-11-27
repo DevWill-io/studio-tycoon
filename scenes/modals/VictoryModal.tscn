@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://3472l3fdmd1d"]
+
+[ext_resource type="Script" uid="uid://cucs1dls7kcxp" path="res://scripts/modals/VictoryModal.gd" id="1_ralqx"]
+
+[node name="VictoryModal" type="PanelContainer" unique_id=628242030]
+custom_minimum_size = Vector2(0, 560)
+script = ExtResource("1_ralqx")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=459306140]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=778241678]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BigIcon" type="Label" parent="Margin/VBox" unique_id=458952055]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "💎"
+horizontal_alignment = 1
+
+[node name="TitleLabel" type="Label" parent="Margin/VBox" unique_id=1384909839]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "ÁLBUM DE DIAMANTE!"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="Margin/VBox" unique_id=689170471]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Você zerou o Studio Tycoon!"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Margin/VBox" unique_id=853711741]
+layout_mode = 2
+
+[node name="StatsTitle" type="Label" parent="Margin/VBox" unique_id=28138858]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49019608, 0.9764706, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "📊 Estatísticas da Jornada"
+
+[node name="StatsBox" type="VBoxContainer" parent="Margin/VBox" unique_id=42050979]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TempoRow" type="Label" parent="Margin/VBox/StatsBox" unique_id=1856456440]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "⏱️ Tempo total: X"
+
+[node name="CliquesRow" type="Label" parent="Margin/VBox/StatsBox" unique_id=55981538]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "👆 Cliques: X"
+
+[node name="DiscosRow" type="Label" parent="Margin/VBox/StatsBox" unique_id=1997091453]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "🏆 Discos: X"
+
+[node name="ConquistasRow" type="Label" parent="Margin/VBox/StatsBox" unique_id=63966238]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "🏅 Conquistas: X/15"
+
+[node name="GoldenRow" type="Label" parent="Margin/VBox/StatsBox" unique_id=310664760]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "🌟 Notas Douradas: X"
+
+[node name="HSeparator2" type="HSeparator" parent="Margin/VBox" unique_id=626685231]
+layout_mode = 2
+
+[node name="ContinuarButton" type="Button" parent="Margin/VBox" unique_id=593644762]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "♾️ Continuar (Modo Infinito)"
+
+[node name="InfoLabel" type="Label" parent="Margin/VBox" unique_id=516089011]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85430586, 0.85430586, 0.9063318, 1)
+theme_override_font_sizes/font_size = 11
+text = "O jogo continua! Siga batendo recordes."
+horizontal_alignment = 1
